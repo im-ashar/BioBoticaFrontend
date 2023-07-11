@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css"
+    />
+
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <!-- Navigation bar -->
+      <nav
+        class="relative flex w-full items-center justify-between bg-mainCol py-2 text-neutral-600 shadow-lg hover:text-neutral-700 focus:text-neutral-700 md:flex-wrap md:justify-start my-auto"
+        data-te-navbar-ref
+      >
+        <div class="flex w-full flex-wrap items-center justify-between px-3">
+          <div
+            class="visible grow basis-[100%] items-center lg:!flex lg:basis-auto"
+            id="navbarSupportedContentX"
+            data-te-collapse-item
+          >
+            <ul
+              class="mr-auto flex flex-col lg:flex-row"
+              data-te-navbar-nav-ref
+            >
+              <li class="lg:mb-0 lg:pr-2 flex" data-te-nav-item-ref>
+                <img src="logo.png" class="w-10" />
+                <a
+                  class="block transition duration-150 ease-in-out text-secText hover:text-white focus:text-white disabled:text-black/30 my-auto lg:p-2 [&.active]:text-black/90"
+                  href="#!"
+                  data-te-nav-link-ref
+                  data-te-ripple-init
+                  data-te-ripple-color="light"
+                  >BioBotica</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero section with background image, heading, subheading and button -->
+    <section
+      class="relative overflow-hidden bg-cover bg-no-repeat"
+      style="background-image: url('Rectangle.png'); height: 100vh"
+    >
+      <div class="flex m-5 flex-wrap md:flex-nowrap">
+        <div class="w-full md:my-auto">
+          <div class="h-[160px] sm:h-[100px]">
+            <p class="text-headText text-6xl" id="type"></p>
+          </div>
+          <div class="flex justify-center w-full m-5 md:block md:ps-[250px]">
+            <a
+              class="inline-block rounded-xl border border-indigo-600 bg-mainCol px-12 py-3 text-sm font-medium text-white hover:bg-mainCol hover:text-white focus:outline-none focus:ring active:text-indigo-500"
+            >
+              Start
+            </a>
+          </div>
+        </div>
+        <div class="sm:self-center sm:w-[60%] mx-auto md:pe-7">
+          <img src="chatbot.png" />
+        </div>
+      </div>
+    </section>
+    <section
+      class="relative overflow-hidden bg-cover bg-no-repeat"
+      style="background-image: url('Rectangle.png'); height: 100vh"
+    >
+      <div class="flex justify-center mt-24">
+        <div class="w-[50%] max-w-lg">
+          <label for="search" class="text-headText font-bold"
+            >Ask Your Question</label
+          >
+          <input
+            id="search"
+            type="text"
+            placeholder="Type your question"
+            class="input input-bordered w-full bg-secText text-headText"
+          />
+        </div>
+        <button class="pt-[23px] my-auto">
+          <svg
+            width="50px"
+            height="50px"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            color="#36454f"
+          >
+            <path
+              d="M3 19V5a2 2 0 012-2h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2z"
+              stroke="#36454f"
+              stroke-width="2"
+            ></path>
+            <path
+              d="M13.856 13.85a3.429 3.429 0 10-4.855-4.842 3.429 3.429 0 004.855 4.842zm0 0L16 16"
+              stroke="#36454f"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div class="flex justify-center gap-3 m-3">
+        <div
+          class="w-[200px] sm:w-[20%] bg-mainCol inline-flex justify-center items-center flex-col rounded-3xl"
+        >
+          <img class="h-[70%] sm:h-[50%]" src="ThesisTitle.png" />
+          <div>
+            <label class="label cursor-pointer">
+              <span class="label-text m-1 text-headText font-extrabold"
+                >Project Title Ideas</span
+              >
+              <input
+                type="radio"
+                name="radio-10"
+                class="radio radio-primary checked:bg-mainCol border-black"
+                checked
+              />
+            </label>
+          </div>
+        </div>
+
+        <div
+          class="w-[200px] sm:w-[20%] bg-mainCol inline-flex justify-center items-center flex-col rounded-3xl"
+        >
+          <img class="h-[70%] sm:h-[50%]" src="ProjectTitleIdeas.png" />
+          <div>
+            <label class="label cursor-pointer">
+              <span class="label-text m-1 text-headText font-extrabold"
+                >Thesis Title</span
+              >
+              <input
+                type="radio"
+                name="radio-10"
+                class="radio radio-primary checked:bg-mainCol border-black"
+              />
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#type", {
+        strings: [
+          ' Hi,<br /> I am <strong class="text-mainCol">BioBotica</strong>',
+        ],
+        typeSpeed: 20,
+        loop: true,
+        backSpeed: 20,
+        cursorChar: "",
+      });
+    </script>
+  </body>
+</html>
