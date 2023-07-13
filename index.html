@@ -52,7 +52,24 @@
     <!-- Hero section with background image, heading, subheading and button -->
     <section
       class="relative overflow-hidden bg-cover bg-no-repeat"
-      style="background-image: url('Rectangle.png'); height: 100vh"
+      style="
+        background-color: #e699ff;
+        background-image: radial-gradient(
+            at 91% 29%,
+            hsla(250, 77%, 78%, 1) 0px,
+            transparent 50%
+          ),
+          radial-gradient(
+            at 45% 96%,
+            hsla(298, 95%, 79%, 1) 0px,
+            transparent 50%
+          ),
+          radial-gradient(
+            at 29% 45%,
+            hsla(212, 63%, 67%, 1) 0px,
+            transparent 50%
+          );
+      "
     >
       <div class="flex m-5 flex-wrap md:flex-nowrap">
         <div class="w-full md:my-auto">
@@ -74,7 +91,24 @@
     </section>
     <section
       class="relative overflow-hidden bg-cover bg-no-repeat"
-      style="background-image: url('Rectangle.png'); height: 100vh"
+      style="
+        background-color: #e699ff;
+        background-image: radial-gradient(
+            at 91% 29%,
+            hsla(250, 77%, 78%, 1) 0px,
+            transparent 50%
+          ),
+          radial-gradient(
+            at 45% 96%,
+            hsla(298, 95%, 79%, 1) 0px,
+            transparent 50%
+          ),
+          radial-gradient(
+            at 29% 45%,
+            hsla(212, 63%, 67%, 1) 0px,
+            transparent 50%
+          );
+      "
     >
       <div class="flex justify-center mt-24">
         <div class="w-[50%] max-w-lg">
@@ -120,7 +154,7 @@
           <img class="h-[70%] sm:h-[50%]" src="ThesisTitle.png" />
           <div>
             <label class="label cursor-pointer">
-              <span class="label-text m-1 text-headText font-extrabold"
+              <span class="label-text m-1 text-white font-extrabold"
                 >Project Title Ideas</span
               >
               <input
@@ -139,7 +173,7 @@
           <img class="h-[70%] sm:h-[50%]" src="ProjectTitleIdeas.png" />
           <div>
             <label class="label cursor-pointer">
-              <span class="label-text m-1 text-headText font-extrabold"
+              <span class="label-text m-1 text-white font-extrabold"
                 >Thesis Title</span
               >
               <input
@@ -150,7 +184,26 @@
             </label>
           </div>
         </div>
+        <div
+          class="w-[200px] sm:w-[20%] bg-mainCol inline-flex justify-center items-center flex-col rounded-3xl"
+        >
+          <img class="h-[70%] sm:h-[50%]" src="icon_poster.svg" />
+          <div>
+            <label class="label cursor-pointer">
+              <span class="label-text m-1 text-white font-extrabold"
+                >Ask Anything</span
+              >
+              <input
+                type="radio"
+                name="radio-10"
+                class="radio radio-primary checked:bg-mainCol border-black"
+                checked
+              />
+            </label>
+          </div>
+        </div>
       </div>
+      
     </section>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>

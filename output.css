@@ -687,8 +687,8 @@ html {
 }
 
 :root {
-  --primary: rebeccapurple;
-  --secondary: cornflowerblue;
+  --primary: #8881be;
+  --secondary: #AE0E32;
 }
 
 * {
@@ -1230,7 +1230,7 @@ html {
 
 .bg-mainCol {
   --tw-bg-opacity: 1;
-  background-color: rgb(149 102 218 / var(--tw-bg-opacity));
+  background-color: rgb(174 14 50 / var(--tw-bg-opacity));
 }
 
 .bg-secText {
@@ -1294,12 +1294,12 @@ html {
 
 .text-headText {
   --tw-text-opacity: 1;
-  color: rgb(54 69 79 / var(--tw-text-opacity));
+  color: rgb(46 38 109 / var(--tw-text-opacity));
 }
 
 .text-mainCol {
   --tw-text-opacity: 1;
-  color: rgb(149 102 218 / var(--tw-text-opacity));
+  color: rgb(174 14 50 / var(--tw-text-opacity));
 }
 
 .text-neutral-600 {
@@ -1341,12 +1341,12 @@ html {
 
 .checked\:bg-mainCol:checked {
   --tw-bg-opacity: 1;
-  background-color: rgb(149 102 218 / var(--tw-bg-opacity));
+  background-color: rgb(174 14 50 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-mainCol:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(149 102 218 / var(--tw-bg-opacity));
+  background-color: rgb(174 14 50 / var(--tw-bg-opacity));
 }
 
 .hover\:text-neutral-700:hover {
