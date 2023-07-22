@@ -5,8 +5,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        //mainCol: "#9566DA",
-        mainCol: "#AE0E32",
+        mainCol: "#0047ab",
+        bioBotica: "#AE0E32",
         secText: "#D2D2D2",
         //headText: "#36454F",
         headText: "#2E266D",
